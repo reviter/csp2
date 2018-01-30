@@ -45,6 +45,13 @@ body {
     padding-bottom: 20px;
 }
 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 section {
     padding: 80px 80px;
 }
@@ -199,12 +206,17 @@ input[type=submit]:active {
 /* ----------------------------------------------- */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/furniture.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/furniture.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/furniture.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/furniture.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+}
+
+.logout-row {
+    height: 200px;
+    margin-top: 150px;
 }
 
 .hero-text-box {
@@ -463,6 +475,11 @@ input[type=checkbox] {
     height: 200px;
 }
 
+.map2 {
+    width: 100%;
+    height: 70px;
+}
+
 .form-box {
     position: absolute;
     width: 100%;
@@ -603,4 +620,32 @@ footer p {
 .js--wp-2.animated,
 .js--wp-3.animated {
     opacity: 1;
+}
+
+
+
+/* ----------------------------------------------- */
+/* Sign-Up */
+/* ----------------------------------------------- */
+
+.section-form {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/signup.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/signup.jpeg);
+}
+
+.label1 {
+    color: #fff;
+}
+
+.signup-h2 {
+    color: #fff;
+}
+
+/* ----------------------------------------------- */
+/* Menu */
+/* ----------------------------------------------- */
+
+.row-category {
+    width: 10%;
+    margin-left: 50%;
 }

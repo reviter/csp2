@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,29 +11,12 @@
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
+        <script src="resources/js/script.js"></script>
         <title>Design Fusion</title>
     </head>
     <body>
-       <header>
-            <nav>
-                <div class="row">
-                    <img src="resources/img/designfusion.png" alt="Omnifood logo" class="logo1">
-                    <ul class="main-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Categories</a></li>
-                        <li><a href="#">Store Location</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Log-In</a></li>                       
-                    </ul>
-                </div>
-            </nav>
-            <div class="hero-text-box">
-                <h1>Build your future with us.<br>Customize your ideal home.</h1>
-                <a class="btn btn-full" href="#">I'm sleepy</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
-            </div>
-       </header>
+       
+    <?php require "partials/nav.php"; ?>
 
        <section class="section-features">
             <div class="row">
@@ -237,41 +221,7 @@
             </div>            
        </section>
 
-       <footer>
-           <div class="row">
-               <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Categories</a></li>
-                        <li><a href="#">Store Location</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-               </div>
-            </div>
-                
-            <div class="row">
-               <div class="col span-1-of-3 social1">
-                    <ul class="social-links1">
-                        <li><img src="resources/img/cc.png" alt=""></li>
-                    </ul>
-               </div>
-               <div class="col span-2-of-3 social2">
-                    <ul class="social-links2">
-                         <li><a href="https://www.facebook.com/DesignFusionFurniture/"><i class="ion-social-facebook"></i></a></li>
-                         <li><a href="https://twitter.com/fusiondesign_ma?lang=en"><i class="ion-social-twitter"></i></a></li>
-                         <li><a href="https://www.instagram.com/design.fusion/"><i class="ion-social-instagram"></i></a></li>
-                         <li><a href="https://www.pinterest.com/lorilwoodall/"><i class="ion-social-pinterest"></i></a></li>
-                     </ul>
-                </div>
-            </div>
-
-           <div class="row">
-                <p>Copyright &copy; 2018 by DesignFusion. All rights reserved.</p>
-                <img src="resources/img/designfusion.png" alt="Omnifood logo" class="logo2">
-           </div>
-       </footer>
-
-       <script src="resources/js/script.js"></script>
+       <?php require "partials/footer.php"; ?>
 
     </body>
 </html>
