@@ -50,6 +50,8 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/signup.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/signup.jpeg);
 }
 
 section {
@@ -206,8 +208,8 @@ input[type=submit]:active {
 /* ----------------------------------------------- */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/furniture.jpeg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/furniture.jpeg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/furniture.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/furniture.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -229,18 +231,11 @@ header {
 }
 
 .logo1 {
-    height: 70px;
-    width: auto;
-    float: left;
-    margin-top: 40px;
-}
-
-.logo-black { 
-    display: none;
     height: 50px;
     width: auto;
     float: left;
-    margin: 5px 0;
+    margin-top: 2px;
+    margin-left: -50px;
 }
 
 /* Main navi */
@@ -439,6 +434,7 @@ header {
 
 input[type=text],
 input[type=email],
+input[type=password],
 select,
 textarea {
     width: 100%;
@@ -488,7 +484,6 @@ input[type=checkbox] {
     background-color: rgba(255, 255, 255, 0.8));
     z-index: 10;
     height: 500px;
-    padding-top: 40px;
 }
 
 
@@ -629,8 +624,13 @@ footer p {
 /* ----------------------------------------------- */
 
 .section-form {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/signup.jpeg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/signup.jpeg);
+}
+
+.section-form1 {
+}
+
+.row-map {
+    padding-bottom: 80px;
 }
 
 .label1 {
@@ -638,6 +638,10 @@ footer p {
 }
 
 .signup-h2 {
+    color: #fff;
+}
+
+.news {
     color: #fff;
 }
 

@@ -131,28 +131,23 @@
            </div>
        </section>
 
-       <section class="section-form">
+       <section class="section-form1">
             <div class="map-box">
-                <div class="map">
                     <div class="form-box">
-                            <div class="row">
-                                <h2>We're currently in this city</h2>
-                            </div>
-                            <div class="row">
-                                <div class="col span-2-of-2">
-                                    <iframe class="map center" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241.0512725508403!2d120.2811279!3d14.8353368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4026e561f6d118dc!2sDesign+Fusion+Furniture!5e0!3m2!1sen!2sph!4v1517233500103" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h2>Olongapo City</h2>
+                        <div class="row">
+                            <h2>We're currently in this city</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col span-2-of-2">
+                                <iframe class="map center" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241.0512725508403!2d120.2811279!3d14.8353368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4026e561f6d118dc!2sDesign+Fusion+Furniture!5e0!3m2!1sen!2sph!4v1517233500103" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-       <section class="section-form">
-           <div class="map1"></div>
+       <section class="section-form1">
             <div class="row">
                 <h2>Message Us</h2>
             </div>
@@ -193,10 +188,10 @@
 
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label>Newsletter?</label>
+                        <label>Newsletter?</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> Yes, please
+                            <input type="checkbox" name="news" class="news" checked> Yes, please
                         </div>
                     </div>
                     
@@ -222,6 +217,8 @@
        </section>
 
        <?php require "partials/footer.php"; ?>
+
+       <script src="resources/js/script.js"></script>
 
     </body>
 </html>

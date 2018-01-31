@@ -96,8 +96,8 @@
 		})		
 
 		$('input[name=cpw]').on('input', function(){
-			if($('input[name=pw]').val() != $('input[name=cpw]').val()){
-				$('input[name=register]').attr('disabled',true)
+			if($('input[fullname=pw]').val() != $('input[fullname=cpw]').val()){
+				$('input[fullname=register]').attr('disabled',true)
 				$('#pw_error').css('color','red')
 				$('#pw_error').html('passwords do not match')
 			} else {

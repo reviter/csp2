@@ -15,7 +15,7 @@ mysqli_query($conn,$sql) or die(mysql_error($conn));
 
 $_SESSION['username'] = $username;
 $_SESSION['role'] = 'regular';
-header('location: home.php');
+header('location: menu.php');
 // $string = file_get_contents("assets/users.json");
 // $users = json_decode($string, true);
 // echo "original users array: "; print_r($users);
