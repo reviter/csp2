@@ -16,7 +16,7 @@
     </head>
     <body>
        
-    <?php require "partials/nav.php"; ?>
+    <?php include "partials/nav.php"; ?>
 
        <section class="section-features">
             <div class="row">
