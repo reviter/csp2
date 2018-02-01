@@ -1,6 +1,6 @@
 <header>
     <nav class="sticky">
-        <div class="row">
+        <div class="logo-row">
             <img src="resources/img/designfusion.png" alt="Omnifood logo" class="logo1">
             <ul class="main-nav">
                 <li><a href="home.php">Home</a></li>

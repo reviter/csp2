@@ -17,8 +17,8 @@ if(mysqli_num_rows($result)>0){
 	$_SESSION['role'] = $row['role'];
 	header('location: login.php');
 } else {
-	echo "failed to login. incorrect login credentials.";
-	echo " please login again <a href='login.php'>here</a>";
+	echo "Failed to login. Incorrect login credentials.";
+	echo " Please login again <a href='login.php'>here</a>";
 }
 
 // if(isset($users[$username]) && $users[$username] == $password){
