@@ -36,7 +36,7 @@
 		'description' => 'Dizzying amounts of goodness.',
 		'price' => 1,
 		'img' => 'resources/img/dining1.jpeg',
-		'category' => 'All Fruit'
+		'category' => 'Dining'
 	];
 
 	$item6 = [

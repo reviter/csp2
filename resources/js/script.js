@@ -2,15 +2,15 @@ $(document).ready(function() {
     
     
     /* For the sticky navigation */
-    $('.js--section-features').waypoint(function(direction) {
-        if (direction == "down") {
-            $('nav').addClass('sticky');
-        } else {
-            $('nav').removeClass('sticky');
-        }
-    }, {
-      offset: '60px;'
-    });
+    // $('.js--section-features').waypoint(function(direction) {
+    //     if (direction == "down") {
+    //         $('nav').addClass('sticky');
+    //     } else {
+    //         $('nav').removeClass('sticky');
+    //     }
+    // }, {
+    //   offset: '60px;'
+    // });
     
     
     /* Scroll on buttons */
@@ -82,4 +82,17 @@ $(document).ready(function() {
         }        
     });
 
+    /* Checkout */
+    $('.checkout-btn').click(function() {
+        $.ajax({
+        method: 'post',
+        url: 'checkout.php',
+        data: {
+            checkout : true
+        },
+        succes:function(data) {
+            // location.reload();
+        }
+         });
+    });
 });

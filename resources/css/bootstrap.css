@@ -2961,6 +2961,10 @@ select[multiple].input-lg {
   .form-inline .has-feedback .form-control-feedback {
     top: 0;
   }
+
+  .form-padding {
+    padding-bottom: 30px;
+  }
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox,

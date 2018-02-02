@@ -5,16 +5,16 @@ session_start();
 $index = $_GET['index'];
 
 //from menu page
-if(isset($_POST['quantity'])){
-	$quantity = $_POST['quantity'];
+// if(isset($_POST['quantity'])){
+	// $quantity = $_POST['quantity'];
 
 	if(isset($_SESSION['cart'][$index]))
-		$_SESSION['cart'][$index] += $quantity;
+		$_SESSION['cart'][$index] += 1;
 	else
-		$_SESSION['cart'][$index] = $quantity;
+		$_SESSION['cart'][$index] = 1;
 
 	header('location: menu.php');
-}
+
 
 if(isset($_POST['change_quantity'])){
 	$quantity = $_POST['change_quantity'];

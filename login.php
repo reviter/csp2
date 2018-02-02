@@ -4,7 +4,7 @@
 	}
 
     function display_content(){ ?>
-    <section class="section-form">
+    <section class="section-form" id="redirect">
         <div class="map2"></div>
         <div class="row">
             <h2 class="signup-h2">Login Form</h2>
@@ -31,14 +31,6 @@
             </div>
 
             <div class="row"> 
-                <div class="col span-1-of-3">  
-                <div class="col span-2-of-3">
-                    <label class="label1"><input type="checkbox"> Remember me</label>
-                </div>
-                </div>
-            </div>
-
-            <div class="row"> 
                 <div class="col span-1-of-3">
                     <label class="label1">&nbsp;</label>
                 </div>
@@ -51,6 +43,5 @@
 
 <?php 
 	} 
-
 	require "index.php";
 ?>

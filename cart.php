@@ -19,24 +19,25 @@ function display_content(){
 		
 		$subtotal = $price * $quantity; 
 		$total += $subtotal; 
-		echo "<div>";
+		echo "<div id='redirect'>";
 		echo "<img class='col-xs-3' src='$image' style='float:left'>";
-		echo $name."<br>";
-		echo $price."<br>";
+		echo "<h4 class='cart-h4'>".$name."</h4><br>";
+		echo "<h4 class='cart-h4'>".$description."</h4><br>";
+		echo "<h4 class='cart-h4'>".$price."</h4><br>";
 		echo "<div style='float:right'>
-			<h4>$subtotal</h4>
+			<h4 class='cart-h4'>Price: $subtotal</h4>
 			<form method='post' action='add_to_cart.php?index=$index'>
 			<input type='number' name='change_quantity' min=1 value='$quantity'><br>
-			<button class='btn btn-primary'>Change Quantity</button><br>
+			<button class='btn btn-default'>Change Quantity</button><br>
 			<a href='remove_from_cart.php?index=$index'>
-			<button type='button' class='btn btn-danger'>Remove From Cart</button></a>
+			<button type='button' class='btn btn-default'>Remove From Cart</button></a>
 			</form>
 			</div>";
 		echo "</div>";
 		echo "<div style='clear:both'></div>";
 	}
-	echo "<center><h3>Total: Php $total</h3></center>";
-	echo "<button type='button' class='btn btn-success'>Checkout Now</button></a>";
+	echo "<center><h4 class='cart-h4'>Total: Php $total</h4></center>";
+	echo "<div class='row-button1'><a href='checkout.php' class='checkout-btn'>Checkout</a></div>";
 }
 
 require 'index.php';

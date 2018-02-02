@@ -6,7 +6,7 @@ session_destroy();
 function display_content(){ ?>
 
 <div class="logout-row">
-    <h2>Log out Successfully.</h2> 
+    <h2 class='cart-h4'>Log out Successfully.</h2> 
 </div>
 
 <?php

@@ -20,7 +20,10 @@ function display_content(){
 	require 'connection.php';
 
 
-	echo "<form><select class='row-category' name='category'><option>All</option>";
+	echo "<div class='form-inline' id='redirect'>
+					<form>
+					<select class='form-control' name='category'>
+					<option>All</option>";
 	$sql = "SELECT * FROM categories";
 	$result = mysqli_query($conn,$sql);
 	while($row = mysqli_fetch_assoc($result)){
@@ -35,7 +38,17 @@ function display_content(){
 	// }
 	}
 	echo "</select>";
-	echo "<div class='row-button'><button>Search</button></form></div>";
+	echo "<div class='form-control-inline'>
+					<button class='btn btn-default'>Search</button>
+					</div>	
+				</form>";
+		
+					if(isset($_SESSION['username']) && $_SESSION['role'] == 'admin'){
+						echo 	"<div class='form-control-inline'>
+										<a href='' class='btn btn-default'>Add Item</a>		
+									</div> ";
+					}
+	echo "</div>";
 
 	$sql = "SELECT * FROM items";
 	$result = mysqli_query($conn,$sql);
@@ -45,16 +58,16 @@ function display_content(){
 	// foreach ($items as $index => $item) {
 		if($filter == 'All' || $item['category_id'] == $filter){
 
-			echo "<div class='col-xs-4 item_display'><img src='".$item['image']."'>";
-			echo "<h5>".$item['name']."</h5>";
-			echo "Price: Php".$item['price']."<br>";
+			echo "<div class='furniture-grid clearfix col-md-6'>
+						<img src='".$item['image']."' class='furniture-image'>";
+			echo "<h4 class='menu-h4'>".$item['name']."</h4>";
+			echo "<h4 class='menu-h4'>Price: Php".$item['price']."</h4><br>";
 			if(isset($_SESSION['username']) && $_SESSION['role'] == 'admin'){
 				echo "<button class='btn btn-primary render_modal_body' data-toggle='modal' data-target='#myModal' data-index='$index'>Edit</button>";
 				echo "<button class='btn btn-danger delete_modal_body' data-toggle='modal' data-target='#deleteModal' data-index='$index'>Delete</button>";
 			}
 			else if(isset($_SESSION['username'])){
-				echo "<form method='POST' action='add_to_cart.php?index=$index'>";
-					echo "<input type='number' name='quantity' min=0>";
+				echo "<form method='POST' class='form-inline1' action='add_to_cart.php?index=$index'>";
 					echo "<button class='btn btn-success cart_modal_body' data-toggle='modal' data-target='#cartModal' data-index='$index'>Add to Cart</button>";
 				echo "</form>";
 			}

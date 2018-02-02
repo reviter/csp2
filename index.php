@@ -34,6 +34,7 @@
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <!-- <script src="resources/js/jquery-3.2.1.min.js"></script> -->
         <script src="resources/js/script.js"></script>
 
     </body>
