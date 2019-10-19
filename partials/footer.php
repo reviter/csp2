@@ -27,7 +27,7 @@
             </div>
 
            <div class="row">
-                <p>Copyright &copy; 2018 by DesignFusion. All rights reserved.</p>
+                <p>Copyright &copy; 2019 Design by Pen. All rights reserved.</p>
                 <img src="resources/img/designfusion.png" alt="Omnifood logo" class="logo2">
            </div>
        </footer>
